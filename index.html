@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Le Jardin, cuisine française de saison dans un écrin de verdure à Lyon." />
+    <meta name="theme-color" content="#173d32" />
+    <title>Le Jardin — Table de saison à Lyon</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="/script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Aller au contenu</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#accueil" aria-label="Le Jardin, accueil">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <span>Le Jardin</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav" data-menu-toggle>
+        <span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale" data-nav>
+        <a href="#maison">La maison</a>
+        <a href="#carte">La carte</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#infos">Infos</a>
+        <a class="nav-cta" href="#reservation">Réserver</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="accueil" aria-labelledby="hero-title">
+        <img class="hero-image" src="assets/le-jardin-hero.png" alt="Table dressée dans le jardin du restaurant au crépuscule" width="1536" height="1024" fetchpriority="high" />
+        <div class="hero-shade"></div>
+        <div class="hero-content shell">
+          <p class="eyebrow light hero-eyebrow"><span aria-hidden="true"></span> Restaurant · Lyon 1<sup>er</sup></p>
+          <h1 id="hero-title">Le Jardin</h1>
+          <p class="hero-copy">Une cuisine française de saison,<br />libre, vivante et généreuse.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#reservation">Réserver une table <span aria-hidden="true">↗</span></a>
+            <a class="button button-ghost" href="#carte">Découvrir la carte <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <div class="hero-meta shell">
+          <p><span>18, rue des Augustins</span><span>69001 Lyon</span></p>
+          <p><span>Du mardi au samedi</span><span>Déjeuner & dîner</span></p>
+        </div>
+      </section>
+
+      <section class="section intro" id="maison">
+        <div class="shell intro-grid">
+          <div>
+            <p class="eyebrow">La maison</p>
+            <h2>Simplement bon.<br /><em>Naturellement.</em></h2>
+          </div>
+          <div class="intro-copy">
+            <p class="lead">Au Jardin, nous cuisinons au rythme des saisons, avec l’envie de faire peu, mais de le faire juste.</p>
+            <p>Nos produits viennent de fermes et d’artisans voisins. Dans l’assiette, une cuisine française libre et généreuse ; en salle, le plaisir de recevoir comme à la maison.</p>
+            <a class="text-link" href="#carte">Découvrir notre cuisine <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="shell statement" aria-label="Nos engagements">
+          <div><strong>Local</strong><span>Des producteurs choisis<br />dans notre région</span></div>
+          <div><strong>Vivant</strong><span>Une carte courte qui change<br />avec les arrivages</span></div>
+          <div><strong>Sincère</strong><span>Des assiettes lisibles,<br />sans artifices</span></div>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="carte">
+        <div class="shell">
+          <div class="section-heading">
+            <div><p class="eyebrow">À la carte</p><h2>Les assiettes<br /><em>du moment</em></h2></div>
+            <p>Quelques créations de notre carte d’été, imaginées chaque matin par la cheffe Éléonore Martin.</p>
+          </div>
+          <div class="dishes" data-dishes></div>
+          <p class="menu-note">Menu du déjeuner à partir de 29 € · Options végétariennes sur demande</p>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="galerie" aria-labelledby="gallery-title">
+        <div class="shell section-heading gallery-heading">
+          <div><p class="eyebrow">L’atmosphère</p><h2 id="gallery-title">Un jardin<br /><em>en ville</em></h2></div>
+          <p>Une parenthèse végétale à quelques pas des quais, pensée pour les déjeuners qui s’attardent et les dîners à la lueur des bougies.</p>
+        </div>
+        <div class="gallery-grid shell" data-gallery></div>
+      </section>
+
+      <section class="reservation" id="reservation">
+        <div class="reservation-backdrop" aria-hidden="true"></div>
+        <div class="shell reservation-inner">
+          <p class="eyebrow light">Votre table vous attend</p>
+          <h2>Et si on se retrouvait<br /><em>au Jardin ?</em></h2>
+          <p>Pour un déjeuner, un dîner ou une occasion particulière, notre équipe sera heureuse de vous recevoir.</p>
+          <a class="button button-light" href="tel:+33478274018">Réserver par téléphone <span aria-hidden="true">↗</span></a>
+          <small>ou appelez-nous au <a href="tel:+33478274018">04 78 27 40 18</a></small>
+        </div>
+      </section>
+
+      <section class="section infos" id="infos">
+        <div class="shell infos-grid">
+          <div class="infos-title"><p class="eyebrow">Nous trouver</p><h2>Les portes<br /><em>sont ouvertes</em></h2></div>
+          <div class="info-block"><span>Adresse</span><p>18, rue des Augustins<br />69001 Lyon, France</p><a class="text-link" href="https://maps.google.com/?q=18+rue+des+Augustins+69001+Lyon" target="_blank" rel="noreferrer">Voir l’itinéraire <span aria-hidden="true">↗</span></a></div>
+          <div class="info-block"><span>Horaires</span><dl><div><dt>Lundi</dt><dd>Fermé</dd></div><div><dt>Mar — Ven</dt><dd>12h — 14h<br />19h — 22h</dd></div><div><dt>Samedi</dt><dd>19h — 22h30</dd></div><div><dt>Dimanche</dt><dd>Fermé</dd></div></dl></div>
+          <div class="info-block contact-block"><span>Contact</span><a href="tel:+33478274018">04 78 27 40 18</a><a href="mailto:bonjour@lejardin-lyon.fr">bonjour@lejardin-lyon.fr</a><div class="socials"><a href="#" aria-label="Instagram">Instagram</a><a href="#" aria-label="Facebook">Facebook</a></div></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner"><a class="brand footer-brand" href="#accueil"><span class="brand-mark" aria-hidden="true">✦</span><span>Le Jardin</span></a><p>Table de saison · Lyon</p><p>© <span data-year></span> Le Jardin</p></div>
+    </footer>
+  </body>
+</html>
