@@ -9,6 +9,11 @@ const siteContent = {
     { name: "Volaille fermière", description: "Petits pois, morilles, jus au thym", price: "29 €" },
     { name: "Abricot rôti", description: "Miel de châtaignier, romarin, lait ribot", price: "11 €" },
   ],
+  countryMenu: [
+    { course: "Entrée", name: "Œuf parfait de ferme", description: "Crème de champignons, noisette et mouillettes au levain" },
+    { course: "Plat", name: "Volaille jaune rôtie", description: "Pommes grenailles, carotte fanes et jus au thym" },
+    { course: "Dessert", name: "Tarte fine aux pommes", description: "Crème crue et caramel de cidre" },
+  ],
   gallery: [
     { src: dishImage, alt: "Assiette de légumes de saison et sauce aux herbes" },
     { src: heroImage, alt: "Ambiance du jardin à la tombée du jour" },
@@ -23,6 +28,14 @@ siteContent.dishes.forEach(({ name, description, price }) => {
   article.className = "dish";
   article.innerHTML = `<h3>${name}</h3><p>${description}</p><strong>${price}</strong>`;
   dishContainer.append(article);
+});
+
+const countryMenuContainer = document.querySelector("[data-country-menu]");
+siteContent.countryMenu.forEach(({ course, name, description }) => {
+  const item = document.createElement("div");
+  item.className = "country-menu-item";
+  item.innerHTML = `<span>${course}</span><h4>${name}</h4><p>${description}</p>`;
+  countryMenuContainer.append(item);
 });
 
 const galleryContainer = document.querySelector("[data-gallery]");
