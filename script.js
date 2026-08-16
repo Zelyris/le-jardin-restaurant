@@ -1,5 +1,6 @@
 import heroImage from "./assets/le-jardin-hero.png";
 import dishImage from "./assets/le-jardin-dish.png";
+import countryImage from "./assets/campagne-francaise.jpg";
 
 // Contenus faciles à adapter pour un autre restaurant ou commerce.
 const siteContent = {
@@ -31,6 +32,7 @@ siteContent.dishes.forEach(({ name, description, price }) => {
 });
 
 const countryMenuContainer = document.querySelector("[data-country-menu]");
+document.querySelector("[data-country-image]").src = countryImage;
 siteContent.countryMenu.forEach(({ course, name, description }) => {
   const item = document.createElement("div");
   item.className = "country-menu-item";
