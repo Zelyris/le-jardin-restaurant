@@ -47,7 +47,7 @@ button { font: inherit; }
 .hero-eyebrow { display: flex; align-items: center; gap: 14px; }
 .hero-eyebrow span { width: 30px; height: 1px; background: var(--gold); }
 .hero-eyebrow sup { margin-left: -3px; font-size: .7em; }
-.hero h1 { font-family: var(--serif); font-size: clamp(78px, 9vw, 132px); font-weight: 400; line-height: .82; letter-spacing: -.06em; margin: 0 0 34px; text-wrap: balance; }
+.hero h1 { max-width: 900px; font-family: var(--serif); font-size: clamp(58px, 6.4vw, 94px); font-weight: 400; line-height: .94; letter-spacing: -.055em; margin: 0 0 30px; text-wrap: balance; }
 .hero-copy { margin: 0 0 36px; font-family: var(--serif); font-size: clamp(21px, 1.8vw, 27px); line-height: 1.38; letter-spacing: -.015em; }
 .hero-actions { display: flex; align-items: center; gap: 12px; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 32px; min-height: 58px; padding: 15px 24px; font-size: 10px; letter-spacing: .17em; text-transform: uppercase; font-weight: 700; border: 1px solid transparent; transition: .25s; }
@@ -145,7 +145,7 @@ h2 em { color: var(--green); font-weight: 400; }
   .hero-image { object-position: 62% center; }
   .hero-shade { background: linear-gradient(90deg, rgba(7,24,20,.8), rgba(7,24,20,.18)), linear-gradient(0deg, rgba(7,24,20,.88) 0%, rgba(7,24,20,.22) 68%, rgba(7,24,20,.3) 100%); }
   .hero-content { justify-content: flex-end; padding-top: 110px; padding-bottom: 112px; }
-  .hero h1 { margin-bottom: 24px; }
+  .hero h1 { max-width: 620px; margin-bottom: 24px; font-size: clamp(50px, 12vw, 72px); line-height: .96; }
   .hero-copy { font-size: 21px; margin-bottom: 30px; }
   .hero-actions { width: 100%; }
   .hero-meta { bottom: 20px; }
@@ -173,7 +173,7 @@ h2 em { color: var(--green); font-weight: 400; }
 
 @media (max-width: 420px) {
   .hero-content { padding-bottom: 110px; }
-  .hero h1 { font-size: clamp(64px, 19vw, 76px); }
+  .hero h1 { font-size: clamp(46px, 12.5vw, 55px); }
   .hero-copy br { display: none; }
   .hero-actions { flex-direction: column; align-items: stretch; }
   .hero-actions .button { width: 100%; }
